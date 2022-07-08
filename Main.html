@@ -10,21 +10,18 @@
         <div class="navbar">
            <div class="container">
               <a class="logo" href="#">Tick<span>list</span></a>
-              
-              <img id="mobile-cta" class="mobile-menu" src="/menu.png" alt="Open Navigation" height="18" width="18">
-              
+
               <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="/cancel.png" alt="Close Navigation" height="25" width="25">
                 
                  <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Task.html">Task</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="Task.html">To-Do</a></li>
                  </ul>
   
-                 <ul class="secondary-nav"> 
-                    <li><a href="#">Contact</a></li>
-                    <li class="go-premium-cta"><a href="Login.html">Log In</a></li>
+                 <ul class="secondary-nav">
+                    <li><a href="#review">Reviews</a></li> 
+                     <li class="go-premium-cta"><a href="#contact">Contact</a></li>
                  </ul>
               </nav>
            </div>
@@ -37,47 +34,44 @@
                  <h1>Tick<span>List</span></h1>
                  <p class="subhead"><h2>Organize your work and life.</h2></p>
                  <div class="hero-cta">
-                    <a href="App.html" class="primary-cta">App For Free</a>
+                    <a href="#app" class="primary-cta">App For Free</a>
                  </div>
               </div>
   
-              <img src="/todo.png" class="hero-img" alt="Illustration" height="380" width="500">
+              <img src="/TickList.png" class="hero-img" alt="Illustration" height="380" width="500">
               
            </div>
         </section>
   
-        <section class="features-section">
+        <section id="about" class="features-section">
            <div class="container">
               <ul class="features-list">
-                 <li>Unlimited Content to access</li>
-                 <li>Doubt solving session</li>
-                 <li>Attend the Live Classes</li>
-                 <li>We also stream Ted talks</li>
-                 <li>Real Time Interaction with your mentor </li>
-                 <li>Other awesome features</li>
+                 <li>This Web Application is made to demonstrate <a href="Task.html">To-Do</a> list.</li>
+                 <li>This web application is made using Vanilla Javascript (i.e. The Normal Basic Javascript) and Hosted in GitHub Pages.</li>
+                 <li><h4>Made by <a class="GitAcc" href="https://github.com/helloworld-byte" target="_blank">Minaal Kumar</a></h4></li>
               </ul>
            </div>
         </section>
   
-        <section class="testimonials-section">
+        <section id="review" class="testimonials-section">
            <div class="container">
               <ul>
                  <li>
-                    <img src="/HTML and CSS/Project/Project image/person.png" alt="Person">
+                    <img src="/user-large-solid.svg" alt="Person">
   
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</blockquote>
                     <cite>- Jane Doe</cite>
                  </li>
   
                  <li>
-                    <img src="/HTML and CSS/Project/Project image/person.png" alt="Person">
+                    <img src="/user-large-solid.svg" alt="Person">
   
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</blockquote>
                     <cite>- Jane Doe</cite>
                  </li>
   
                  <li>
-                    <img src="/HTML and CSS/Project/Project image/person.png" alt="Person">
+                    <img src="/user-large-solid.svg" alt="Person">
   
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</blockquote>
                     <cite>- Jane Doe</cite>
@@ -86,7 +80,7 @@
            </div>
         </section>
   
-        <section class="contact-section">
+        <section id="contact" class="contact-section">
            <div class="container">
               <div class="contact-left">
                  <h2>Contact</h2>
@@ -100,27 +94,15 @@
   
                     <input type="submit" class="send-message-cta" value="Send message">
                  </form>
+
+                 <h2 id="app"><b>App will be coming soon.</b></h2>
+                                  
               </div>
               <div class="contact-right">
                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61713.17618774312!2d74.1074602615866!3d14.821131803457996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe60ce1a0140d7%3A0x3ceab1e851eb586a!2sKarwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1617533005235!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
            </div>
         </section>
-  
-        <script>
-  
-           const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit')
-  
-           mobileBtn.addEventListener('click', () => {
-              nav.classList.add('menu-btn');
-           })
-  
-           mobileBtnExit.addEventListener('click', () => {
-              nav.classList.remove('menu-btn');
-           })
-        </script>
   
      </body>
 </html>

@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Simple To Do List</title>
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <!--Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="/Task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="Task to be done..">
-            <button id="push">Add</button>
+<body class="container">
+    <header class="logo">
+        <a href="/Main.html">
+            <img class="photo-logo" src="/to.png" alt="Website Logo" class="logo">
+        </a>
+        <h2 class="headline">Vanilla Javascript Todo Web App</h2>
+    </header>
+    <div class="main">
+        <form action="">
+            <div class="Task-and-Description">
+                <input type="text" placeholder="New Task ...">
+                <textarea name="description" id="Description" placeholder="Add Description and Deadline" cols="60" rows="10" wrap="hard"></textarea>
+            </div>
+            <button type="submit"><i class="fas fa-plus-square"></i></button>
+        </form>
+        <div class="todo-stats">
+            <div class="total-tasks">
+                Total Tasks: <span>0</span>
+            </div>
+            <div class="completed-tasks">
+                Completed Tasks: <span>0</span>
+            </div>
+            <div class="remaining-tasks">
+                Remaining Tasks: <span>0</span>
+            </div>
         </div>
-        <div id="tasks"></div>
+        <div class="todoList">
+            <ul>
+
+            </ul>
+            <a class="clearAll" id="clearAll">Clear All</a>
+        </div>
     </div>
-    <!--Script-->
-    <script src="script.js"></script>
+
+    <script type="text/javascript" src="/Task.js"></script>
 </body>
 </html>
